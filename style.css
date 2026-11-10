@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #101827;
+    color: white;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+.app {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 25px 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.logo {
+    font-size: 35px;
+}
+
+#themeBtn {
+    background: #263449;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.small-title {
+    color: #41d6ad;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 29px;
+    line-height: 1.7;
+    font-weight: 900;
+}
+
+.exam-date {
+    margin-top: 18px;
+    color: #b6c4d6;
+    font-size: 16px;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    direction: rtl;
+}
+
+.time-box {
+    background: #1d2b40;
+    border: 1px solid #31445e;
+    border-radius: 17px;
+    padding: 20px 5px;
+    text-align: center;
+}
+
+.time-box span {
+    display: block;
+    font-size: 30px;
+    font-weight: 900;
+    color: #41d6ad;
+    font-variant-numeric: tabular-nums;
+}
+
+.time-box small {
+    color: #aebdd0;
+    font-size: 13px;
+}
+
+.seconds span {
+    color: #ffbd59;
+}
+
+.progress-card,
+.motivation,
+.tasks {
+    background: #1a2739;
+    border: 1px solid #2d4058;
+    border-radius: 18px;
+    padding: 20px;
+    margin-top: 22px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+#progressText {
+    color: #41d6ad;
+}
+
+.progress-bg {
+    height: 11px;
+    background: #344258;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #20b995, #64e6be);
+    border-radius: 20px;
+    transition: width 0.5s;
+}
+
+.progress-card p {
+    color: #aebdd0;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.motivation {
+    text-align: center;
+}
+
+.motivation-icon {
+    font-size: 28px;
+}
+
+.motivation h3 {
+    margin: 5px 0;
+    color: #41d6ad;
+}
+
+.motivation p {
+    color: #d0dbea;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.tasks h2 {
+    font-size: 20px;
+}
+
+.subtitle {
+    color: #aebdd0;
+    font-size: 12px;
+    margin: 5px 0 18px;
+}
+
+.task-input {
+    display: flex;
+    gap: 8px;
+}
+
+.task-input input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #40536d;
+    border-radius: 10px;
+    background: #101827;
+    color: white;
+    font-family: inherit;
+    outline: none;
+}
+
+.task-input input:focus {
+    border-color: #41d6ad;
+}
+
+#addTask {
+    background: #27bd99;
+    color: #101827;
+    border: none;
+    border-radius: 10px;
+    width: 45px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-top: 10px;
+    background: #26364b;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.task-item input {
+    accent-color: #41d6ad;
+    width: 17px;
+    height: 17px;
+}
+
+.task-item.done span {
+    text-decoration: line-through;
+    color: #8999ad;
+}
+
+.task-item span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.delete-task {
+    border: none;
+    background: transparent;
+    color: #ff7474;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.task-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-size: 12px;
+    color: #41d6ad;
+}
+
+#clearTasks {
+    background: transparent;
+    border: none;
+    color: #ff8585;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #b4c2d4;
+    font-size: 13px;
+}
+
+footer small {
+    color: #71839b;
+}
+
+body.light {
+    background: #eef3f8;
+    color: #172438;
+}
+
+body.light .time-box,
+body.light .progress-card,
+body.light .motivation,
+body.light .tasks {
+    background: white;
+    border-color: #dce5ef;
+}
+
+body.light .hero .exam-date,
+body.light .motivation p,
+body.light .progress-card p,
+body.light .subtitle {
+    color: #586a80;
+}
+
+body.light .task-input input {
+    background: #f2f5f9;
+    color: #172438;
+}
+
+body.light .task-item {
+    background: #edf2f7;
+}
+
+body.light .task-footer {
+    color: #138c70;
+}
+
+body.light #themeBtn {
+    background: #dce6f1;
+    color: #172438;
+}
+
+@media (max-width: 380px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .time-box span {
+        font-size: 24px;
+    }
+
+    .time-box {
+        padding: 16px 3px;
+    }
+}

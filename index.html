@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101827">
+    <title>العد التنازلي للبكالوريا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <div class="logo">🎓</div>
+        <button id="themeBtn">☀️</button>
+    </header>
+
+    <section class="hero">
+        <p class="small-title">رحلتك نحو النجاح تبدأ الآن</p>
+        <h1>العد التنازلي بدأ<br>لامتحانات البكالوريا</h1>
+        <p class="exam-date">📅 12 يونيو 2027</p>
+    </section>
+
+    <section class="countdown">
+        <div class="time-box">
+            <span id="days">000</span>
+            <small>يوم</small>
+        </div>
+
+        <div class="time-box">
+            <span id="hours">00</span>
+            <small>ساعة</small>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <small>دقيقة</small>
+        </div>
+
+        <div class="time-box seconds">
+            <span id="seconds">00</span>
+            <small>ثانية</small>
+        </div>
+    </section>
+
+    <section class="progress-card">
+        <div class="progress-info">
+            <span>الطريق إلى الامتحانات</span>
+            <span id="progressText">جاري الحساب...</span>
+        </div>
+        <div class="progress-bg">
+            <div id="progressBar"></div>
+        </div>
+        <p>كل يوم بتذاكر فيه بيقربك من حلمك 💪</p>
+    </section>
+
+    <section class="motivation">
+        <div class="motivation-icon">✨</div>
+        <h3>رسالة ليك</h3>
+        <p id="quote">النجاح يبدأ بخطوة، استمر ولا تستسلم.</p>
+    </section>
+
+    <section class="tasks">
+        <h2>📚 أهداف المذاكرة</h2>
+        <p class="subtitle">اكتب أهدافك اليومية وتابع إنجازك</p>
+
+        <div class="task-input">
+            <input type="text" id="taskInput"
+                   placeholder="اكتب هدفك هنا...">
+            <button id="addTask">+</button>
+        </div>
+
+        <div id="taskList"></div>
+
+        <div class="task-footer">
+            <span id="taskCount">0 أهداف مكتملة</span>
+            <button id="clearTasks">مسح الكل</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>صُنع من أجل حلم يستحق التعب ❤️</p>
+        <small>Class of 2027 | Baccalaureate</small>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
